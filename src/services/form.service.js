@@ -38,16 +38,13 @@ export const submitIssue = async ({
     return Promise.reject("Something went wrong", e);
   }
 };
-export const submitBusinessDeal = async ({
-  userName,
-  phone,
-  message,
-}) => {
+export const submitBusinessDeal = async ({ userName, phone, message }) => {
   try {
     const businessDealRef = getBusinessDealsRef();
     const docData = {
       userName: userName,
       phone: phone,
+      isDealClosed: false,
       created_at: Timestamp.now(),
       message: message,
     };
