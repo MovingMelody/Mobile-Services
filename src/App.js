@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import MobileBrands from "./components/Brands/mobileBrands";
+import GlobalStyles from "./styles/global";
+import Faq from "./components/Faq/faq";
+import Issues from "./components/Issues/issues";
+import NavBar from "./components/Navbar/navbar";
+import Testimonials from "./components/Testimonials/testimonials";
+import Footer from "./components/Footer/footer";
+import BusinessDeals from "./components/BusinessDeals/businessDeals";
+import CustomerForm from "./components/CustomerForm/index";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <GlobalStyles />
+      <CustomerForm />
+      <div className="site-wrapper">
+        <Testimonials />
+      </div>
+      <Issues />
+      <div className="site-wrapper">
+        <Faq />
+      </div>
+      <BusinessDeals />
+      <div className="site-wrapper">
+        <MobileBrands />
+      </div>
+      <Footer />
     </div>
   );
 }
