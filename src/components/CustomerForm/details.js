@@ -112,6 +112,15 @@ const Details = () => {
       });
       return;
     }
+    if (!phone.trim().length !== 10) {
+      toast({
+        title: `Please Enter Valid Phone Number`,
+        position: "bottom",
+        status: "warning",
+        isClosable: true,
+      });
+      return;
+    }
     setBusy(true);
 
     const mp = {
@@ -174,7 +183,6 @@ const Details = () => {
               options={deviceTypeList}
               placeholder="Device"
               isSearchable="false"
-              
               value={deviceTypeList.filter(function (option) {
                 console.log(option);
                 return option.value === deviceType;
