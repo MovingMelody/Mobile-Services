@@ -7,15 +7,19 @@ import Testimonials from "./components/Testimonials/testimonials";
 import Footer from "./components/Footer/footer";
 import BusinessDeals from "./components/BusinessDeals/businessDeals";
 import CustomerForm from "./components/CustomerForm/index";
+import Hero from "./components/Hero/hero";
+import Float from "./Floating/float";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <Hero />
       <GlobalStyles />
       <CustomerForm />
 
       <Issues />
+      <Float/>
       <div className="site-wrapper">
         <Faq />
       </div>

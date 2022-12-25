@@ -25,15 +25,15 @@ const Cart = () => {
         <List spacing={3}>
           <ListItem></ListItem>
           <ListItem>
-            <ListIcon as={HiArrowNarrowRight} color="green.500" />
+            <ListIcon as={HiArrowNarrowRight} color="#003F3F" />
             Book Our Service
           </ListItem>
           <ListItem>
-            <ListIcon as={HiArrowNarrowRight} color="green.500" />
+            <ListIcon as={HiArrowNarrowRight} color="#003F3F" />
             Get a callback from our team
           </ListItem>
           <ListItem>
-            <ListIcon as={HiArrowNarrowRight} color="green.500" />
+            <ListIcon as={HiArrowNarrowRight} color="#003F3F" />
             Repair & Quick Delivery
           </ListItem>
         </List>

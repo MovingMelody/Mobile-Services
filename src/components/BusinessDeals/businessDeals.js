@@ -18,7 +18,7 @@ import {
   Center,
   useToast,
   CircularProgress,
-  useColorModeValue,
+  // useColorModeValue,
 } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
@@ -83,42 +83,38 @@ export default function Contact() {
   };
 
   return (
-    <Container
-      maxW="full"
-      bg={useColorModeValue("gray.100", "gray.700")}
-      centerContent
-      overflow="hidden"
-    >
+    <Container maxW="full" bg="brand" centerContent overflow="hidden">
       <Flex>
         <Box
-          bg="#02054B"
+          bg="#003F3F"
           color="white"
           borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
+          m={{ sm: 6, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
+          mt="16"
         >
-          <Box p={4}>
+          <Box p={6}>
             <Wrap spacing={{ base: 20 }}>
               <WrapItem>
                 <Box>
                   <Heading>For Business Deals</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.300">
                     Fill up the form below to get in touch with us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={8} alignItems="flex-start">
                       <HStack>
-                        <MdPhone color="#F0BD65" size="20px" />
+                        <MdPhone color="#FC7969" size="20px" />
                         <Text>+91 9642183590</Text>
                       </HStack>
 
                       <HStack>
-                        <MdEmail color="#F0BD65" size="20px" />
+                        <MdEmail color="#FC7969" size="20px" />
                         <Text>repairmobile@test.in</Text>
                       </HStack>
 
                       <HStack>
-                        <MdLocationOn color="#F0BD65" size="20px" />
+                        <MdLocationOn color="#FC7969" size="20px" />
                         <Text>Bengaluru, India</Text>
                       </HStack>
                     </VStack>
@@ -128,7 +124,9 @@ export default function Contact() {
               <WrapItem>
                 <Center>
                   <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
+                    <Box 
+                    
+                    m={10} color="#0B0E3F">
                       <VStack spacing={5}>
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
@@ -190,7 +188,7 @@ export default function Contact() {
                             {!busy ? (
                               <Button
                                 variant="solid"
-                                bg="#F0BD65"
+                                bg="#FC7969"
                                 color="white"
                                 _hover={{}}
                                 onClick={() => uploadBusinessDeal()}

@@ -9,7 +9,7 @@ import {
   CircularProgress,
   Button,
   useBreakpointValue,
-//   useColorModeValue,
+  //   useColorModeValue,
   Center,
   useToast,
 } from "@chakra-ui/react";
@@ -150,7 +150,7 @@ const Details = () => {
       });
     });
   };
-//   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
+  //   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
   return (
     <VStack
@@ -159,7 +159,7 @@ const Details = () => {
       p={10}
       spacing={10}
       alignItems="flex-start"
-    //   bg={bgColor}
+      //   bg={bgColor}
     >
       <VStack spacing={3} alignItems="flex-start">
         <Heading color="brand" size={{ base: "xl" }}>
@@ -172,6 +172,9 @@ const Details = () => {
             <FormLabel>Device Type</FormLabel>
             <Select
               options={deviceTypeList}
+              placeholder="Device"
+              isSearchable="false"
+              
               value={deviceTypeList.filter(function (option) {
                 console.log(option);
                 return option.value === deviceType;
@@ -186,7 +189,7 @@ const Details = () => {
           <FormControl>
             <FormLabel>Brand Name</FormLabel>
             <Select
-              placeholder="Select Brand"
+              placeholder=" Brand"
               options={brandsList}
               value={brandsList.filter(function (option) {
                 console.log(option);

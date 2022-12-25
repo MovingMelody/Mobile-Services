@@ -29,7 +29,7 @@ export default function faq() {
         <VStack p={0} w="full" h="full" align="stretch">
           <Accordion allowToggle>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -50,7 +50,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -58,7 +58,7 @@ export default function faq() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -78,7 +78,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -86,7 +86,7 @@ export default function faq() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -106,7 +106,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -114,7 +114,7 @@ export default function faq() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -134,7 +134,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -142,7 +142,7 @@ export default function faq() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -162,7 +162,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -170,7 +170,7 @@ export default function faq() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
-              border="1px solid #F0BD65"
+              border="1px solid #FC7969"
               borderRadius="6px"
               p="2"
               alignItems="stretch"
@@ -190,7 +190,7 @@ export default function faq() {
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} color="bc" >
+              <AccordionPanel pb={4} color="bc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

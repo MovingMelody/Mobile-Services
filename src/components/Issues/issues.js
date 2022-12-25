@@ -25,7 +25,7 @@ export default function mobileBrands() {
       minWidth="100%"
       p={{ xl: 10, base: 6 }}
       style={{ backgroundColor: "#262A2E" }}
-      mt="20"
+      mt="12"
     >
       <Heading
         as="h4"
@@ -52,7 +52,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <AiOutlineApple size={40} color="#F0BD65" />
+            <AiOutlineApple size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             All Apple
@@ -69,7 +69,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <HiOutlineDevicePhoneMobile size={40} color="#F0BD65" />
+            <HiOutlineDevicePhoneMobile size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Broken
@@ -86,7 +86,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <BsBatteryHalf size={40} color="#F0BD65" />
+            <BsBatteryHalf size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Battery Dead
@@ -103,7 +103,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <HiFingerPrint size={40} color="#F0BD65" />
+            <HiFingerPrint size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Fingerprint
@@ -120,7 +120,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <CgSmartphoneChip size={40} color="#F0BD65" />
+            <CgSmartphoneChip size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Motherboard
@@ -137,7 +137,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <RiWaterFlashLine size={40} color="#F0BD65" />
+            <RiWaterFlashLine size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Water
@@ -154,7 +154,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <MdOutlineLaptopMac size={40} color="#F0BD65" />
+            <MdOutlineLaptopMac size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Laptop
@@ -171,7 +171,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <CgAppleWatch size={40} color="#F0BD65" />
+            <CgAppleWatch size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Apple
@@ -188,7 +188,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <FiBatteryCharging size={40} color="#F0BD65" />
+            <FiBatteryCharging size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Charging
@@ -205,7 +205,7 @@ export default function mobileBrands() {
             border="1px solid #4d545c"
             borderRadius="6px"
           >
-            <HiOutlineSpeakerWave size={40} color="#F0BD65" />
+            <HiOutlineSpeakerWave size={40} color="#FC7969" />
           </Center>
           <Text mt="4" color="white" maxW="120px">
             Speaker

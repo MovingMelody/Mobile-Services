@@ -41,7 +41,7 @@ const ListHeader = ({ children }) => {
 
 export default function LargeWithLogoCentered() {
   return (
-    <Box mt="20">
+    <Box mt="20" color="white" bgGradient="linear(to-b, #492C81 ,#7928CA)">
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={23}>
           <Stack align={"flex-start"} spacing="3">
@@ -54,12 +54,7 @@ export default function LargeWithLogoCentered() {
             ></Container>
             <Stack direction={"row"} align={"center"} spacing={2}>
               <Link href={"#"}>MacBook Repair</Link>
-              <Tag
-                size={"sm"}
-                bg={useColorModeValue("green.300", "green.800")}
-                ml={2}
-                color={"white"}
-              >
+              <Tag size={"sm"} bg="brand" ml={2} color={"white"}>
                 New
               </Tag>
             </Stack>

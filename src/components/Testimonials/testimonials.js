@@ -69,8 +69,10 @@ const TestimonialAvatar = ({ src, name, title }) => {
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
+        <Text 
+        color="white"
+        fontWeight={600}>{name}</Text>
+        <Text fontSize={"sm"} color={useColorModeValue("gray.200", "gray.200")}>
           {title}
         </Text>
       </Stack>
@@ -80,11 +82,13 @@ const TestimonialAvatar = ({ src, name, title }) => {
 
 export default function WithSpeechBubbles() {
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+    <Box bg="brand">
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <Heading>Our Customers Says</Heading>
-          <Text>
+          <Heading fontWeight={"700"} color="white">
+            Our Customers Says
+          </Heading>
+          <Text color="white" textAlign="center">
             We have been providing service to customers throughout the Bengaluru
           </Text>
         </Stack>

@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import "@fontsource/quicksand"
-import "@fontsource/montserrat"
-import "@fontsource/inter"
+import "@fontsource/quicksand";
+import "@fontsource/montserrat";
+import "@fontsource/inter";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const theme = extendTheme({
   styles: {
@@ -24,10 +24,10 @@ const theme = extendTheme({
     },
   },
   colors: {
-    hc: "#262A2E",
+    hc: "#333333",
     white: "#fff",
     bc: "#66707A",
-    brand:"#F0BD65",
+    brand: "#FC7969",
     primary: {
       100: "#dbd6e7",
       200: "#cac2dc",
