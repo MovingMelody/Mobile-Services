@@ -112,7 +112,7 @@ const Details = () => {
       });
       return;
     }
-    if (!phone.trim().length !== 10) {
+    if (phone.trim().length !== 10) {
       toast({
         title: `Please Enter Valid Phone Number`,
         position: "bottom",
