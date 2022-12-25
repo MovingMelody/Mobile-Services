@@ -33,7 +33,7 @@ const Logo = (props) => {
 };
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={-1} textTransform="uppercase">
+    <Text fontWeight={"600"} fontSize={"lg"} mb={-1} textTransform="uppercase">
       {children}
     </Text>
   );
@@ -43,7 +43,7 @@ export default function LargeWithLogoCentered() {
   return (
     <Box mt="20">
       <Container as={Stack} maxW={"6xl"} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={18}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={23}>
           <Stack align={"flex-start"} spacing="3">
             <ListHeader>Services</ListHeader>
             <Container
@@ -101,7 +101,7 @@ export default function LargeWithLogoCentered() {
               <Link href={"#"}>+91 9642183590</Link>
             </HStack>
             <HStack alignItems="center">
-              <FiMail color="brand"></FiMail>
+              <FiMail></FiMail>
               <Link href={"#"}>repair@test.in</Link>
             </HStack>
           </Stack>
@@ -127,9 +127,7 @@ export default function LargeWithLogoCentered() {
         >
           <Logo />
         </Flex>
-        <Text pt={6} fontSize={"sm"} textAlign={"center"}
-        px={{base:4}}
-        >
+        <Text pt={6} fontSize={"sm"} textAlign={"center"} px={{ base: 4 }}>
           Copyright © Gadget Repair {new Date().getFullYear()}. All Rights
           Reserved.
         </Text>

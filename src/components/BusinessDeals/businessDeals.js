@@ -16,13 +16,79 @@ import {
   InputLeftElement,
   Textarea,
   Center,
+  useToast,
+  CircularProgress,
+  useColorModeValue,
 } from "@chakra-ui/react";
-import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
+import { useState } from "react";
+import { submitBusinessDeal } from "../../services/form.service";
 
-export default function contact() {
+export default function Contact() {
+  const toast = useToast();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  const uploadBusinessDeal = () => {
+    toast.closeAll();
+
+    if (!message.trim()) {
+      toast({
+        title: `Please enter your Business deal`,
+        position: "bottom",
+        status: "error",
+        isClosable: true,
+      });
+      return;
+    }
+    if (!name.trim()) {
+      toast({
+        title: `Please Enter Your Name`,
+        position: "bottom",
+        status: "error",
+        isClosable: true,
+      });
+      return;
+    }
+    if (!phone.trim()) {
+      toast({
+        title: `Please Enter Phone`,
+        position: "bottom",
+        status: "error",
+        isClosable: true,
+      });
+      return;
+    }
+    setBusy(true);
+
+    submitBusinessDeal({
+      userName: name,
+      phone,
+      message,
+    }).then(() => {
+      setName("");
+      setPhone("");
+      setBusy(false);
+      setMessage("");
+      toast({
+        title: `Submission Successful`,
+        position: "bottom",
+        status: "success",
+        isClosable: true,
+      });
+    });
+  };
+
   return (
-    <Container maxW="full" mt={0} centerContent overflow="hidden">
+    <Container
+      maxW="full"
+      bg={useColorModeValue("gray.100", "gray.700")}
+      centerContent
+      overflow="hidden"
+    >
       <Flex>
         <Box
           bg="#02054B"
@@ -71,39 +137,72 @@ export default function contact() {
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input
+                              type="text"
+                              size="md"
+                              value={name}
+                              onChange={(event) => {
+                                setName(event.currentTarget.value);
+                              }}
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
+                          <FormLabel>Phone Number</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
-                              children={<MdOutlineEmail color="gray.800" />}
+                              children={<MdPhone color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input
+                              type="text"
+                              value={phone}
+                              maxLength={10}
+                              size="md"
+                              onChange={(e) => {
+                                const re = /^[0-9\b]+$/;
+                                if (
+                                  e.target.value === "" ||
+                                  re.test(e.target.value)
+                                ) {
+                                  setPhone(e.currentTarget.value);
+                                }
+                              }}
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Message</FormLabel>
                           <Textarea
+                            value={message}
+                            onChange={(event) => {
+                              setMessage(event.currentTarget.value);
+                            }}
                             borderColor="gray.300"
                             _hover={{
                               borderRadius: "gray.300",
                             }}
-                            placeholder="message"
+                            placeholder="I need bulk order"
                           />
                         </FormControl>
                         <FormControl id="name" float="right">
                           <Center>
-                            <Button
-                              variant="solid"
-                              bg="#F0BD65"
-                              color="white"
-                              _hover={{}}
-                            >
-                              Send Message
-                            </Button>
+                            {!busy ? (
+                              <Button
+                                variant="solid"
+                                bg="#F0BD65"
+                                color="white"
+                                _hover={{}}
+                                onClick={() => uploadBusinessDeal()}
+                              >
+                                Send Message
+                              </Button>
+                            ) : (
+                              <CircularProgress
+                                isIndeterminate
+                                color="green.300"
+                              />
+                            )}
                           </Center>
                         </FormControl>
                       </VStack>

@@ -9,20 +9,20 @@ import BusinessDeals from "./components/BusinessDeals/businessDeals";
 import CustomerForm from "./components/CustomerForm/index";
 
 function App() {
-
   return (
     <div className="App">
       <NavBar />
       <GlobalStyles />
       <CustomerForm />
-      <div className="site-wrapper">
-        <Testimonials />
-      </div>
+
       <Issues />
       <div className="site-wrapper">
         <Faq />
       </div>
       <BusinessDeals />
+      <div className="site-wrapper">
+        <Testimonials />
+      </div>
       <div className="site-wrapper">
         <MobileBrands />
       </div>

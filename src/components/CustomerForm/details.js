@@ -9,7 +9,7 @@ import {
   CircularProgress,
   Button,
   useBreakpointValue,
-  useColorModeValue,
+//   useColorModeValue,
   Center,
   useToast,
 } from "@chakra-ui/react";
@@ -150,7 +150,7 @@ const Details = () => {
       });
     });
   };
-  const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
+//   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
   return (
     <VStack
@@ -159,14 +159,14 @@ const Details = () => {
       p={10}
       spacing={10}
       alignItems="flex-start"
-      bg={bgColor}
+    //   bg={bgColor}
     >
       <VStack spacing={3} alignItems="flex-start">
         <Heading color="brand" size={{ base: "xl" }}>
           Get a Quote Now.
         </Heading>
       </VStack>
-      <SimpleGrid columns={2} columnGap={6} rowGap={10} w="full">
+      <SimpleGrid columns={2} columnGap={6} rowGap={6} w="full">
         <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Device Type</FormLabel>

@@ -2,7 +2,7 @@ import {
   Heading,
   VStack,
   Text,
-  useColorModeValue,
+//   useColorModeValue,
   List,
   ListIcon,
   ListItem,
@@ -10,10 +10,10 @@ import {
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Cart = () => {
-  const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
+//   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
 
   return (
-    <VStack p={10} spacing={6} align="flex-start" bg={bgColor}>
+    <VStack p={10} spacing={6} align="flex-start" >
       <VStack alignItems="flex-start" spacing={3}>
         <Heading size={{ base: "xl" }} color="brand">
           Save Time & Money
