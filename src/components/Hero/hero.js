@@ -17,7 +17,7 @@ export default function CallToActionWithVideo() {
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 12, md: 28 }}
         direction={{ base: "column-reverse", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
@@ -32,15 +32,16 @@ export default function CallToActionWithVideo() {
               _after={{
                 content: "''",
                 width: "full",
-                height: "20%",
+                height: "0%",
                 position: "absolute",
                 bottom: 1,
                 left: 0,
+                opacity:0.6,
                 bg: "brand",
                 zIndex: -1,
               }}
             >
-              Got a Glitch.
+              Got a Glitch?
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
@@ -102,18 +103,6 @@ export default function CallToActionWithVideo() {
             width={"full"}
             overflow={"hidden"}
           >
-            {/* <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            /> */}
             <SlideShow />
           </Box>
         </Flex>
