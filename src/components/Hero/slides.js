@@ -1,17 +1,20 @@
 import { Flex, Box, Image } from "@chakra-ui/react";
 import React from "react";
 import { useEffect, useState } from "react";
+import slide1 from '../../assets/slide1.png';
+import slide2 from '../../assets/slide2.jpeg';
 function Slides() {
   const slides = [
     {
-      img: "https://gadset.in/wp-content/uploads/2021/10/MACBOOK-Repair-5.png",
+      img: slide1,
     },
     {
-      img: "https://gadset.in/wp-content/uploads/2021/10/MACBOOK-Repair-5.png",
+      img: slide2
     },
     {
-      img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      img: slide1
     },
+    
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const slidesCount = slides.length;
