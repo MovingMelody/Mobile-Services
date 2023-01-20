@@ -19,7 +19,7 @@ const Cart = () => {
           Save Time & Money
         </Heading>
         <Text>
-          Our Service team will call you to pickup the device after submitting
+          Our Service team in Bengaluru will call you to pickup the device after submitting
           the issue.{" "}
         </Text>
         <List spacing={3}>

@@ -15,15 +15,19 @@ import React from "react";
 
 export default function faq() {
   return (
-    <Container maxWidth="container.xl" p={8} mt="10">
+    <Container maxWidth="container.xl" p={8} mt="10" id="aboutUs">
       <Flex py={8} direction={{ base: "column", md: "row" }}>
         <VStack maxWidth="2xl" h="full" alignItems="flex-start" mb="6">
           <Heading m="0" pr={{ xl: 14 }}>
             We’ll be there when you need us
           </Heading>
           <Text pr={{ xl: 14 }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, cum.
-            Id et dicta ullam repellendus iure quo cupiditate alias distinctio!
+            The one-stop shop for all your Apple Devices and Other Smartphone
+            fixes.
+            <br />
+            <br />
+            iDeviceFix.in Team is specialized at troubleshooting, repairing,
+            replacing, and refurbishing all types of Tech Devices.
           </Text>
         </VStack>
         <VStack p={0} w="full" h="full" align="stretch">

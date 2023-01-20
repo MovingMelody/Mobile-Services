@@ -8,8 +8,9 @@ import {
   Button,
   Icon,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
-import { HiLocationMarker } from "react-icons/hi";
+import { HiOutlinePhone, HiLocationMarker } from "react-icons/hi";
 import SlideShow from "./slides";
 export default function CallToActionWithVideo() {
   return (
@@ -36,23 +37,23 @@ export default function CallToActionWithVideo() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                opacity:0.6,
+                opacity: 0.6,
                 bg: "brand",
                 zIndex: -1,
               }}
             >
-              Got a Glitch?
+              We Repair
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
-              Get a Fix!
+              All Apple Things.
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            At iDeviceFix.in, we handle all complex to minor repairs related to
+            your MacBook or any Other Apple Devices.
           </Text>
+
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
@@ -64,19 +65,37 @@ export default function CallToActionWithVideo() {
               px={6}
               colorScheme={"primary"}
               bg={"brand"}
+              onClick={() => {
+                window.location.href = "#bookAppointment";
+              }}
               _hover={{ bg: "#003F3F" }}
             >
-              Book Appointment
+              <Link style={{ textDecoration: "none" }} href="#bookAppointment">
+                Repair My Device
+              </Link>
             </Button>
             <Button
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
+              onClick={() => {
+                window.open("tel:9900000642");
+              }}
               px={6}
-              leftIcon={<HiLocationMarker h={4} w={4} color={"gray.300"} />}
+              leftIcon={<HiOutlinePhone h={4} w={4} color={"black"} />}
             >
-              Locate Us
+              <Link style={{ textDecoration: "none" }} href="tel:9900000642">
+                +91 9900000642
+              </Link>
             </Button>
+          </Stack>
+          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: "row" }}>
+            <HiLocationMarker size="30" color="black"></HiLocationMarker>
+            <Text>
+              Sri Ranga Complex, Dommsandra Circle
+              <br />
+              Sarjapur main road Bengaluru, 572125.
+            </Text>
           </Stack>
         </Stack>
         <Flex

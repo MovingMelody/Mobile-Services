@@ -16,6 +16,7 @@ import {
   Heading,
   HStack,
   Image,
+  // Center,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -23,18 +24,23 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import logo from "../../assets/smartphone.png";
+import { HiOutlinePhone } from "react-icons/hi";
+
+import logo from "../../assets/amsrt3.png";
 
 const Logo = (props) => {
   return (
     <HStack spacing="2">
       <Image
-        boxSize="36px"
-        objectFit="cover"
+        py="1"
+        boxSize="46px"
+        objectFit="contain"
         src={logo}
         alt="Dan Abramov"
       ></Image>
-      <Heading size="md">Logo</Heading>
+      <Heading fontSize="2xl" color="brand" fontWeight="extrabold" size="md">
+        iDeviceFix
+      </Heading>
     </HStack>
   );
 };
@@ -86,25 +92,36 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg="brand"
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Book Appointment
-          </Button>
+          <Link style={{ textDecoration: "none" }} href="tel:9900000642">
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg="brand"
+              href={"#"}
+              leftIcon={<HiOutlinePhone h={4} w={4} color={"gray.300"} />}
+              _hover={{
+                bg: "#003F3F",
+              }}
+            >
+              +91 9900000642
+            </Button>
+          </Link>
         </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
+      {/* <Center
+        p="1"
+        display={{ base: "flex", md: "none" }}
+        backgroundColor="brand"
+        alignContent="center"
+      >
+        <Text>Call +91 90000023423</Text>
+      </Center> */}
     </Box>
   );
 }
@@ -166,7 +183,7 @@ const DesktopSubNav = ({ label, href }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      style={{textDecoration:"none"}}
+      style={{ textDecoration: "none" }}
       _hover={{ bg: useColorModeValue("#E0DAF2", "gray.200") }}
     >
       <Stack direction={"row"} align={"center"}>
@@ -178,7 +195,6 @@ const DesktopSubNav = ({ label, href }) => {
           >
             {label}
           </Text>
-          {/* <Text fontSize={"sm"}>{subLabel}</Text> */}
         </Box>
         <Flex
           transition={"all .3s ease"}
@@ -292,10 +308,10 @@ const NAV_ITEMS = [
 
   {
     label: "About Us",
-    href: "#",
+    href: "#aboutUs",
   },
   {
     label: "Contact Us",
-    href: "#",
+    href: "#businessDeals",
   },
 ];

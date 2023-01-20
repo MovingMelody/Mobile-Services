@@ -29,8 +29,8 @@ export default function mobileBrands() {
         We Provide Service for all Mobile Brands
       </Heading>
       <Text textAlign="center" mb="8" color="bc">
-        At Gadget Repair We repair iPhones, MacBooks, Apple Watch, Android
-        Mobiles, Tablets, Smart Watches at best price.
+        At iDeviceFix We repair iPhones, MacBooks, Apple Watch, Android
+        Mobiles, Tablets, Smart Watches at best guaranteed price.
       </Text>
       <BrandsWrapper>
         <EachBrand>

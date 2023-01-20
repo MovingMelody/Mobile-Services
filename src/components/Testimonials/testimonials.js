@@ -8,6 +8,9 @@ import {
   Avatar,
   useColorModeValue,
 } from "@chakra-ui/react";
+import user1 from "../../assets/reviews/user1.png";
+import user2 from "../../assets/reviews/user2.png";
+import user3 from "../../assets/reviews/user3.png";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -69,9 +72,9 @@ const TestimonialAvatar = ({ src, name, title }) => {
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text 
-        color="white"
-        fontWeight={600}>{name}</Text>
+        <Text color="white" fontWeight={600}>
+          {name}
+        </Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.200", "gray.200")}>
           {title}
         </Text>
@@ -89,7 +92,8 @@ export default function WithSpeechBubbles() {
             Our Customers Says
           </Heading>
           <Text color="white" textAlign="center">
-            We have been providing service to customers throughout the Bengaluru
+            Why iDeviceFix is the best Macbook & iPhone Repair Center Choice For
+            You?
           </Text>
         </Stack>
         <Stack
@@ -98,17 +102,15 @@ export default function WithSpeechBubbles() {
         >
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Affordable Pricing</TestimonialHeading>
+              <TestimonialHeading>Affordable Repair Cost</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Nice and fast service. Parts are little less compared to apple
+                service centre. Recommended for repairing MacBook.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-              }
-              name={"Ramesh Verma"}
+              src={user3}
+              name={"SANTHOSH kn"}
               title={"@Google Reviews"}
             />
           </Testimonial>
@@ -116,31 +118,28 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Quick Service</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Fast service with latest technology equipments and value for
+                Money.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-              }
-              name={"Jain Gupta"}
+              src={user2}
+              name={"Rajendra Prasad Nelakurthi"}
               title={"@Google Reviews"}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Genuine Parts</TestimonialHeading>
+              <TestimonialHeading>Original Parts</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Very good and prompt service. Repaired my MacBook which was
+                badly damaged and screen broken. Was done at a reasonable price
+                , used Original Parts. Highly recommended!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-              }
-              name={"Himesh Kiran"}
+              src={user1}
+              name={"Sourav Chatterjee"}
               title={"@Google Reviews"}
             />
           </Testimonial>

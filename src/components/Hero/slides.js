@@ -2,16 +2,12 @@ import { Flex, Box, Image } from "@chakra-ui/react";
 import React from "react";
 import { useEffect, useState } from "react";
 import slide1 from "../../assets/slide1.png";
-import slide2 from "../../assets/slide2.jpeg";
 import slide3 from "../../assets/slide3.jpeg";
 import slide4 from "../../assets/slide4.png";
 function Slides() {
   const slides = [
     {
       img: slide1,
-    },
-    {
-      img: slide2,
     },
     {
       img: slide3,

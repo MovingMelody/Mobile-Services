@@ -16,7 +16,7 @@ import {
 import { FiMail } from "react-icons/fi";
 // import { HiAcademicCap } from "react-icons/hi2";
 import { MdLocationOn } from "react-icons/md";
-import logo from "../../assets/smartphone.png";
+import logo from "../../assets/amsrt3.png";
 
 const Logo = (props) => {
   return (
@@ -27,7 +27,7 @@ const Logo = (props) => {
         src={logo}
         alt="Dan Abramov"
       ></Image>
-      <Heading size="md">Logo</Heading>
+      <Heading size="md">iDeviceFix.in</Heading>
     </HStack>
   );
 };
@@ -71,7 +71,6 @@ export default function LargeWithLogoCentered() {
               width="16"
               borderRadius="50px"
             ></Container>
-            <Text href={"#"}>Cookies Policy</Text>
             <Text href={"#"}>Privacy Policy</Text>
             <Text href={"#"}>Terms of Service</Text>
             <Text href={"#"}>Refund Policy</Text>
@@ -86,18 +85,22 @@ export default function LargeWithLogoCentered() {
             ></Container>
             <HStack alignItems="start">
               <MdLocationOn height="40" size="30"></MdLocationOn>
-              <Link href={"#"}>
-                #950, 5th B Cross, 1st Main, 1st Block, Koramangala, Bangalore -
-                560034
+              <Link href={"#"} style={{ textDecoration: "none" }}>
+                Sri Ranga complex, Dommsandra circle
+                <br /> Sarjapur Main road, Bangalore 572125.
               </Link>
             </HStack>
             <HStack alignItems="center">
               <PhoneIcon size="30"></PhoneIcon>
-              <Link href={"#"}>+91 9642183590</Link>
+              <Link style={{ textDecoration: "none" }} href={"tel:9900000642"}>
+                +91 9900000642
+              </Link>
             </HStack>
             <HStack alignItems="center">
               <FiMail></FiMail>
-              <Link href={"#"}>repair@test.in</Link>
+              <Link style={{ textDecoration: "none" }} href={"#"}>
+                repair@idevicefix.in
+              </Link>
             </HStack>
           </Stack>
         </SimpleGrid>
@@ -123,7 +126,7 @@ export default function LargeWithLogoCentered() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"} px={{ base: 4 }}>
-          Copyright © Gadget Repair {new Date().getFullYear()}. All Rights
+          Copyright © iDeviceFix {new Date().getFullYear()}. All Rights
           Reserved.
         </Text>
       </Box>

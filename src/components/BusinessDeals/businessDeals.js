@@ -83,7 +83,13 @@ export default function Contact() {
   };
 
   return (
-    <Container maxW="full" bg="brand" centerContent overflow="hidden">
+    <Container
+      id="businessDeals"
+      maxW="full"
+      bg="brand"
+      centerContent
+      overflow="hidden"
+    >
       <Flex>
         <Box
           bg="#003F3F"
@@ -105,17 +111,20 @@ export default function Contact() {
                     <VStack pl={0} spacing={8} alignItems="flex-start">
                       <HStack>
                         <MdPhone color="#FC7969" size="20px" />
-                        <Text>+91 9642183590</Text>
+                        <Text>+91 9900000642</Text>
                       </HStack>
 
                       <HStack>
                         <MdEmail color="#FC7969" size="20px" />
-                        <Text>repairmobile@test.in</Text>
+                        <Text>repair@idevicefix.in</Text>
                       </HStack>
 
                       <HStack>
                         <MdLocationOn color="#FC7969" size="20px" />
-                        <Text>Bengaluru, India</Text>
+                        <Text>
+                          Sri Ranga complex, Dommsandra circle
+                          <br /> Sarjapur Main road, Bangalore 572125.
+                        </Text>
                       </HStack>
                     </VStack>
                   </Box>
@@ -124,9 +133,7 @@ export default function Contact() {
               <WrapItem>
                 <Center>
                   <Box bg="white" borderRadius="lg">
-                    <Box 
-                    
-                    m={10} color="#0B0E3F">
+                    <Box m={10} color="#0B0E3F">
                       <VStack spacing={5}>
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
