@@ -104,17 +104,16 @@ export default function faq() {
                       fontSize={{ base: "16px", md: "18px" }}
                       fontWeight="medium"
                     >
-                      How does Repair work ?
+                      Do you provide repair services for all brands?
                     </Text>
                   </Box>
                   <AccordionIcon ml="30" />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} color="bc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Yes, the iDeviceFix.in provides mobile services & repair in
+                Bangalore for all brands. The expert team is excellent in
+                offering iPhone and MacBook repair services as well.
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
