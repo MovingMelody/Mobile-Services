@@ -15,6 +15,7 @@ const theme = extendTheme({
       },
 
       // styles for the `a`
+      //changes here
       a: {
         color: "teal.500",
         _hover: {
