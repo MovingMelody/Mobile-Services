@@ -308,7 +308,7 @@ const NAV_ITEMS = [
 
   {
     label: "About Us",
-    href: "#aboutUs",
+    href: "/about",
   },
   {
     label: "Contact Us",
