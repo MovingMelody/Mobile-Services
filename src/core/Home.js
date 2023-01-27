@@ -4,7 +4,6 @@ import Faq from "../components/Faq/faq";
 import Issues from "../components/Issues/issues";
 import NavBar from "../components/Navbar/navbar";
 import Testimonials from "../components/Testimonials/testimonials";
-import Footer from "../components/Footer/footer";
 import BusinessDeals from "../components/BusinessDeals/businessDeals";
 import CustomerForm from "../components/CustomerForm/index";
 import Hero from "../components/Hero/hero";
@@ -30,7 +29,6 @@ function Home() {
       <div className="site-wrapper">
         <MobileBrands />
       </div>
-      <Footer />
     </motion.div>
   );
 }

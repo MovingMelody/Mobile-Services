@@ -4,3 +4,7 @@
 .aboutText{
     text-align: justify;
 }
+
+body{
+    overflow-x: hidden;
+}

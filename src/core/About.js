@@ -56,14 +56,12 @@ const About = () => {
           <Card px="3" rounded="md" bg="white">
             <CardHeader>
               <Center>
-                <Text fontSize="20px">Original Products</Text>
+                <Text as="b" fontSize="20px">Respectful</Text>
               </Center>
             </CardHeader>
             <CardBody>
               <Text className="aboutText">
-                How all this mistaken idea of denouncing pleasure and praising
-                pain was born and we will give you a complete account seds of
-                the system
+              We Treat people and their concerns with the utmost respect.We try to provide solution for every problem of the customer.
               </Text>
             </CardBody>
           </Card>
@@ -72,14 +70,12 @@ const About = () => {
           <Card px="3" rounded="md" bg="white">
             <CardHeader>
               <Center>
-                <Text fontSize="20px">Original Products</Text>
+                <Text as="b" fontSize="20px">Best Service</Text>
               </Center>
             </CardHeader>
             <CardBody>
-              <Text className="aboutText">
-                How all this mistaken idea of denouncing pleasure and praising
-                pain was born and we will give you a complete account seds of
-                the system
+              <Text  className="aboutText">
+                We provide the best service. We have a great team who work together in purpose and good service is our priority. Wow everyone, every time...
               </Text>
             </CardBody>
           </Card>
@@ -88,14 +84,12 @@ const About = () => {
           <Card px="3" rounded="md" bg="white">
             <CardHeader>
               <Center>
-                <Text fontSize="20px">Original Products</Text>
+                <Text as="b" fontSize="20px">Customer Happiness</Text>
               </Center>
             </CardHeader>
             <CardBody>
               <Text className="aboutText">
-                How all this mistaken idea of denouncing pleasure and praising
-                pain was born and we will give you a complete account seds of
-                the system
+                Customers satisfaction is our first priority. We try our best to make the customers happy with our work. We love to hear good feedbacks.
               </Text>
             </CardBody>
           </Card>
