@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import AllRoutes from "./AllRoutes";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import "@fontsource/quicksand";
 import "@fontsource/montserrat";
@@ -15,6 +15,7 @@ const theme = extendTheme({
       },
 
       // styles for the `a`
+      //changes here
       a: {
         color: "teal.500",
         _hover: {
@@ -48,7 +49,7 @@ const theme = extendTheme({
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <App />
+        <AllRoutes />
     </ChakraProvider>
   </React.StrictMode>
 );

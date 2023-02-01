@@ -15,69 +15,77 @@ import asus from "../../assets/brands/asus.png";
 import nokia from "../../assets/brands/nokia.webp";
 import honor from "../../assets/brands/honor.jpeg";
 import { Container, Heading, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { cardVariants } from "../../animation";
 export default function mobileBrands() {
   return (
-    <Container maxWidth="container.xl" mt="20">
-      <Heading
-        as="h5"
-        size="lg"
-        textAlign="center"
-        mb="2"
-        color="hc"
-        textTransform="capitalize"
-      >
-        We Provide Service for all Mobile Brands
-      </Heading>
-      <Text textAlign="center" mb="8" color="bc">
-        At iDeviceFix We repair iPhones, MacBooks, Apple Watch, Android
-        Mobiles, Tablets, Smart Watches at best guaranteed price.
-      </Text>
-      <BrandsWrapper>
-        <EachBrand>
-          <Image src={apple} alt="" srcset="" width="200px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={oneplus} alt="" srcset="" width="140px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={google} alt="" srcset="" width="60px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={realme} alt="" srcset="" width="110px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={mi} alt="" srcset="" width="55px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={samsung} alt="" srcset="" width="100px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={vivo} alt="" srcset="" width="90px" />
-        </EachBrand>
+    <motion.div
+      variants={cardVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+    >
+      <Container maxWidth="container.xl" mt="20">
+        <Heading
+          as="h5"
+          size="lg"
+          textAlign="center"
+          mb="2"
+          color="hc"
+          textTransform="capitalize"
+        >
+          We Provide Service for all Mobile Brands
+        </Heading>
+        <Text textAlign="center" mb="8" color="bc">
+          At iDeviceFix We repair iPhones, MacBooks, Apple Watch, Android
+          Mobiles, Tablets, Smart Watches at best guaranteed price.
+        </Text>
+        <BrandsWrapper>
+          <EachBrand>
+            <Image src={apple} alt="" srcset="" width="200px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={oneplus} alt="" srcset="" width="140px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={google} alt="" srcset="" width="60px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={realme} alt="" srcset="" width="110px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={mi} alt="" srcset="" width="55px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={samsung} alt="" srcset="" width="100px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={vivo} alt="" srcset="" width="90px" />
+          </EachBrand>
 
-        <EachBrand>
-          <Image src={moto} alt="" srcset="" width="100px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={huawei} alt="" srcset="" width="140px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={oppo} alt="" srcset="" width="90px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={lenovo} alt="" srcset="" width="110px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={asus} alt="" srcset="" width="110px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={honor} alt="" srcset="" width="110px" />
-        </EachBrand>
-        <EachBrand>
-          <Image src={nokia} alt="" srcset="" width="110px" />
-        </EachBrand>
-      </BrandsWrapper>
-    </Container>
+          <EachBrand>
+            <Image src={moto} alt="" srcset="" width="100px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={huawei} alt="" srcset="" width="140px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={oppo} alt="" srcset="" width="90px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={lenovo} alt="" srcset="" width="110px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={asus} alt="" srcset="" width="110px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={honor} alt="" srcset="" width="110px" />
+          </EachBrand>
+          <EachBrand>
+            <Image src={nokia} alt="" srcset="" width="110px" />
+          </EachBrand>
+        </BrandsWrapper>
+      </Container>
+    </motion.div>
   );
 }
 

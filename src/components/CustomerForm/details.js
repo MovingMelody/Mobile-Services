@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 import { submitIssue } from "../../services/form.service";
 import Select from "react-select";
+
 const Details = () => {
   const brandsList = [
     { label: "Apple", value: "apple" },
@@ -336,6 +337,7 @@ const Details = () => {
   //   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
   return (
+   
     <VStack
       w="full"
       h="full"
@@ -477,6 +479,7 @@ const Details = () => {
         </GridItem>
       </SimpleGrid>
     </VStack>
+    
   );
 };
 
