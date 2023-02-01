@@ -8,7 +8,7 @@ import { Card, CardHeader, CardBody } from "@chakra-ui/react";
 const About = () => {
   return (
     <div>
-      <Container maxW={"7xl"} className="aboutBg" mb={3}>
+      <Container maxW={"100%"} className="aboutBg" mb={3}>
         <Box p={5} color={"white"}>
           <Text as="b" fontSize="30px">
             About Us
@@ -43,9 +43,9 @@ const About = () => {
         ></Box>
       </Center>
 
-      <SimpleGrid columns={[1, null, 3]} spacing="20px" px={6} py={1}>
-        <Box boxShadow="2xl">
-          <Card px="3" rounded="md" bg="white">
+      <SimpleGrid columns={[1, null, 3]} spacing="20px" px={6} py={1} mt = {5}>
+        <Box>
+          <Card px="3" rounded="md" bg="white" border='1px' borderColor='#F56565'>
             <CardHeader>
               <Center>
                 <Text as="b" fontSize="20px">
@@ -56,13 +56,13 @@ const About = () => {
             <CardBody>
               <Text className="aboutText">
                 We Treat people and their concerns with the utmost respect.We
-                try to provide solution for every problem of the customer.
+                try to provide solution for every problem of all apple devices and other android devices.
               </Text>
             </CardBody>
           </Card>
         </Box>
-        <Box boxShadow="2xl">
-          <Card px="3" rounded="md" bg="white">
+        <Box >
+          <Card px="3" rounded="md" bg="white" border='1px' borderColor='#F56565'>
             <CardHeader>
               <Center>
                 <Text as="b" fontSize="20px">
@@ -79,8 +79,8 @@ const About = () => {
             </CardBody>
           </Card>
         </Box>
-        <Box boxShadow="2xl">
-          <Card px="3" rounded="md" bg="white">
+        <Box>
+          <Card px="3" rounded="md" bg="white" border='1px' borderColor='#F56565'>
             <CardHeader>
               <Center>
                 <Text as="b" fontSize="20px">
