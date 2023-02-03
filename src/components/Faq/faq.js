@@ -1,10 +1,4 @@
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
   Flex,
   VStack,
   Container,
@@ -13,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
-import { cardVariants, faqVariants } from "../../animation";
+import { cardVariants } from "../../animation";
 import Faqquestions from "./Faqquestions";
 export default function faq() {
   return (
